@@ -1,0 +1,86 @@
+//A program that accepts integer values for month, day, and year and then output the "long version" of the specified date.
+
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+
+int month, date, year;
+
+cout << "Enter date in MM/DD/YYYY form. \n" << "\n";
+cout << "Enter month of birth: \n";
+cin >> month; 
+cout << "Enter date of birth: \n";
+cin >> date;
+cout << "Enter year of birth: \n";
+cin >> year;
+cout<< "\n";
+
+switch (month)
+	{
+		case 1: 
+		cout << "Your birthdate is January " << date << ", " << year << endl; 
+		break; 
+		
+		case 2: 
+		 if (month = 2 && date > 28)
+			{
+				cout << "This is an invalid date!"; 
+			}
+			
+		else
+			{
+			cout << "Your birthdate is February " << date << ", " << year << endl;
+			}		
+		break; 
+		
+		case 3: 
+		cout << "Your birthdate is March " << date << ", " << year << endl; 
+		break;
+		
+		case 4: 
+		cout << "Your birthdate is April " << date << ", " << year << endl; 
+		break; 
+		
+		case 5: 
+		cout << "Your birthdate is May " << date << ", " << year << endl; 
+		break; 
+		
+		case 6: 
+		cout << "Your birthdate is June " << date << ", " << year << endl; 
+		break; 
+		
+		case 7: 
+		cout << "Your birthdate is July " << date << ", " << year << endl; 
+		break; 
+	
+		case 8: 
+		cout << "Your birthdate is August " << date << ", " << year << endl; 
+		break;
+		
+		case 9: 
+		cout << "Your birthdate is September " << date << ", " << year << endl; 
+		break;  	
+		
+		case 10: 
+		cout << "Your birthdate is October " << date << ", " << year << endl; 
+		break; 	
+		
+		case 11: 
+		cout << "Your birthdate is November " << date << ", " << year << endl; 
+		break; 	
+		
+		case 12: 
+		cout << "Your birthdate is December " << date << ", " << year << endl; 
+		break; 	
+		
+			
+	}
+
+
+return 0;
+
+}
